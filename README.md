@@ -37,4 +37,4 @@ You can view the live demo of the website here: [Live Demo](https://https://pand
 
 All rights reserved. The code and content of this website are proprietary to Chandrakant Patil. Unauthorized use, copying, modification, or distribution is strictly prohibited.
 
-For detailed license information, please refer to the [LICENSE](LICENSE) file.
+For detailed license information, please refer to the [LICENSE](LICENSE.md) file.
