@@ -31,7 +31,7 @@ The Pandurang Maharaj Legacy and Biography website aims to honor and provide in-
 
 ## Live Site 
 
-You can view the live demo of the website here: [Live Demo](https://https://pandumaharaj.netlify.app/)
+You can view the live demo of the website here: [Live Demo](https://pandumaharaj.netlify.app/)
 
 ## License
 
