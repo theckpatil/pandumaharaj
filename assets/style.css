@@ -21,6 +21,11 @@
 
 }
 
+/* Disable tap highlight on mobile devices */
+div, a, button, img, span {
+  -webkit-tap-highlight-color: transparent;
+}
+
 body {
   scroll-behavior: smooth;
   font-family: "Poppins", "Tiro Devanagari Marathi", system-ui, sans-serif;

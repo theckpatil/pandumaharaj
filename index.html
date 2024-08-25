@@ -255,7 +255,7 @@
           </div>
         </div>
         <div class="copyright">
-          <p>© <span id="year"></span> <span class="cpy">| </span> Designed by <a
+          <p>© <span id="year"></span> <span class="cpy">| </span> Developed by <a
               href="https://www.instagram.com/theckpatil"> Chandrakant Patil</a>
           </p>
         </div>
@@ -263,16 +263,20 @@
     </div>
   </main>
 
-  <!-- JavaScript Files -->
 
-  <script src="https://kit.fontawesome.com/a81368914c.js"></script>
+</body>
+
+  <!-- JavaScript Files -->
   <script src="./assets/index.js"></script>
   <script src="./assets/gallary.js"></script>
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script>
-    AOS.init();
+    document.addEventListener('DOMContentLoaded', function () {
+      AOS.init({
+        duration: 1200,
+        easing: 'ease-in-out',
+      });
+    });
   </script>
-
-</body>
 
 </html>

@@ -16,11 +16,26 @@ window.addEventListener("scroll", scrollHeader);
 /*==================== Mobile Menu====================*/
 big_wrapper = document.querySelector(".big-wrapper");
 hamburger_menu = document.querySelector(".hamburger-menu");
+links = document.querySelector(".links");
 
 function events() {
-  hamburger_menu.addEventListener("click", () => {
+  hamburger_menu.addEventListener("click", (e) => {
     big_wrapper.classList.toggle("active");
+    e.stopPropagation(); // Prevents closing the menu immediately
   });
+
+  // Hide the menu when clicking anywhere outside the links element
+  document.addEventListener("click", (e) => {
+    // Check if the big_wrapper is active and the click was outside the links element
+    if (
+      big_wrapper.classList.contains("active") &&
+      !links.contains(e.target) &&
+      e.target !== hamburger_menu // Ensure click is not on the hamburger menu itself
+    ) {
+      big_wrapper.classList.remove("active");
+    }
+  });
+
 }
 
 events();
