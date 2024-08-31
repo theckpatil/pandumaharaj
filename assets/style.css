@@ -93,6 +93,8 @@ header {
   position: sticky;
   top: 0;
   background-color: var(--backgroundColor);
+  box-shadow: 0 -1px 10px 0 rgba(0, 0, 0, 0.18);
+
 }
 
 header .container {
@@ -100,7 +102,6 @@ header .container {
   justify-content: space-between;
   align-items: center;
   height: 50px;
-
 }
 
 .logo {
@@ -162,8 +163,8 @@ header .container {
   height: 4px;
   background-color: var(--lightOne);
   margin: 6px 0;
-  transition: all 0.4s ease-in-out;
-  border-radius: 4px;
+  transition: 0.5s;
+  border-radius: 3px;
 }
 
 .bar::before,
@@ -450,7 +451,7 @@ figcaption {
   }
   .links {
     position: fixed;
-    top: 49px;
+    top: 50px;
     right: 0;
     width: 150px;
     height: 200px;
