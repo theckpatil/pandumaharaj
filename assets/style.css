@@ -378,18 +378,20 @@ figcaption {
     position: fixed;
     top: 65px;
     right: 0;
-    width: 150px;
+    width: 200px;
     height: auto;
     background-color: var(--mainColor);
     z-index: 95;
     display: flex;
+    text-align: center;
     align-items: center;
     justify-content: center;
     transform: translateX(100%);
     transition: 0.5s;
     /* border-radius: 6px; */
     border-bottom-left-radius: 15px;
-    font-size: 3rem;
+    padding: 10px;
+    word-spacing: 4px;
   }
 
   .links a:hover {
@@ -399,7 +401,7 @@ figcaption {
 
   .links ul {
     flex-direction: column;
-    font-size: 16px;
+    font-size: 20px;
   }
 
   .links a {
