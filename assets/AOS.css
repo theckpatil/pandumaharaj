@@ -1,0 +1,70 @@
+/* Default state: hidden */
+[data-aos] {
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+  }
+  
+  /* Zoom In Animation */
+  .zoom-in-animate {
+    animation: zoomIn 1s forwards;
+  }
+  
+  @keyframes zoomIn {
+    from {
+      transform: scale(0.8);
+      opacity: 0;
+    }
+    to {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+  
+  /* Zoom Out Up Animation */
+  .zoom-out-up-animate {
+    animation: zoomOutUp 1s forwards;
+  }
+  
+  @keyframes zoomOutUp {
+    from {
+      transform: translateY(0);
+      opacity: 1;
+    }
+    to {
+      transform: translateY(-100px);
+      opacity: 0;
+    }
+  }
+  
+  /* Zoom In Right Animation */
+  .zoom-in-right-animate {
+    animation: zoomInRight 1s forwards;
+  }
+  
+  @keyframes zoomInRight {
+    from {
+      transform: translateX(100px) scale(0.8);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0) scale(1);
+      opacity: 1;
+    }
+  }
+  
+  /* Zoom In Left Animation */
+  .zoom-in-left-animate {
+    animation: zoomInLeft 1s forwards;
+  }
+  
+  @keyframes zoomInLeft {
+    from {
+      transform: translateX(-100px) scale(0.8);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0) scale(1);
+      opacity: 1;
+    }
+  }
+  

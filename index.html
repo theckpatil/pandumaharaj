@@ -16,8 +16,9 @@
   <link rel="stylesheet" href="./assets/style.css" />
   <link rel="stylesheet" href="./assets/gallary.css" />
   <link rel="stylesheet" href="./assets/footer.css" />
+  <link rel="stylesheet" href="./assets/AOS.css" />
   <!-- // Animation On Scroll CDN Link For Webpage Elements -->
-  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <!-- <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" /> -->
   <!-- // Favicon Icon Link  -->
   <link rel="shortcut icon" href="/assets/img/Pandu Maharaj.jpg" type="image/x-icon">
 
@@ -35,13 +36,13 @@
           <div class="links">
             <ul>
               <li><a href="/index.html">मुख्यपृष्ठ</a></li>
-              <li><a href="#">महाराजांविषयी</a></li>
-              <li><a href="#" name="Instagram">समाधी</a></li>
-              <li><a href="#" name="Instagram">गॅलरी</a></li>
+              <li><a href="#about">महाराजांविषयी</a></li>
+              <li><a href="#samadhi_info">समाधी</a></li>
+              <li><a href="#gallary">गॅलरी</a></li>
               <!-- <li><a href="https://goo.gl/maps/svSy8oSKG4oGddDn7" name="Google Map">मॅप</a></li> -->
               <li><a href="mailto:pandumaharajsamadhi@gmail.com" name="Mail">संपर्क</a></li>
               <!-- <li><a href="/en/index.html">भाषा बदला</a></li> -->
-              
+
             </ul>
           </div>
           <div class="hamburger-menu">
@@ -85,13 +86,13 @@
         </div>
         <div class="section2">
           <div class="right2">
-            <div class="title2" data-aos="zoom-in" data-aos-offset="50">
+            <div class="title2 zoom-in-50" id="about">
               <h1>✽ अधिक माहिती ✽</h1>
             </div>
 
             <div class="section2">
               <div class="right2">
-                <section class="text2" data-aos="zoom-in" data-aos-offset="100" data-aos-duration="1000">
+                <section class="text2" data-aos="zoom-in" data-aos-offset="50">
                   <h3 class="sub-head"><span class="span-left"></span>जीवन प्रवास <span class="span-right"></span></h3>
                   &nbsp; &nbsp;श्री पांडुरंग महादू पाटील उर्फ <strong>” पांडु महाराज ”</strong> यांचा जन्म दिनांक 01
                   एप्रिल
@@ -104,7 +105,7 @@
                   काम केले. गरीब परिस्थिती असूनही त्यांनी आपल्या धर्मावर दृढ श्रद्धा ठेवली आणि सतत साधना केली.</p>
                 </section>
 
-                <section class="text2" data-aos="zoom-out-up" data-aos-offset="100" data-aos-duration="1000">
+                <section class="text2" data-aos="zoom-in-left" data-aos-offset="100">
                   <h3 class="sub-head"><span class="span-left"></span>आध्यात्मिक प्रवास<span class="span-right "></span>
                   </h3>
                   <p>&nbsp; &nbsp;एका दिवशी महाराज शेतात काम करत असताना त्यांना गुरु गोरक्षनाथ (नवनाथांपैकी एक नाथ)
@@ -119,7 +120,7 @@
                   </p>
                 </section>
 
-                <section class="text2" data-aos="zoom-in-right" data-aos-offset="100" data-aos-duration="1000">
+                <section class="text2 zoom-in-right-100" data-aos="zoom-in" data-aos-offset="100" id="samadhi_info">
                   <h3 class="sub-head"><span class="span-left "></span>समाधी आणि स्मारक<span class="span-right "></span>
                   </h3>
                   <p>&nbsp; &nbsp;वयाच्या 80 व्या वर्षी, दिनांक 03 फेब्रुवारी 2019 रोजी सकाळी सुमारे 6 वाजून 45
@@ -136,7 +137,7 @@
                   </p>
                 </section>
 
-                <section class="text2" data-aos="zoom-in-left" data-aos-offset="100" data-aos-duration="1000">
+                <section class="text2" data-aos="zoom-in-right" data-aos-offset="100">
                   <h3 class="sub-head"><span class="span-left "></span>सेवा आणि भक्तिभाव<span
                       class="span-right "></span></h3>
                   <p>&nbsp; &nbsp;महाराजांनी आपल्या आयुष्यातील बराचसा वेळ समाजसेवा आणि आध्यात्मिक कार्यात घालवला.
@@ -152,7 +153,7 @@
                   </p>
                 </section>
 
-                <section class="text2" data-aos="zoom-in" data-aos-offset="100" data-aos-duration="1000">
+                <section class="text2" data-aos="zoom-in-left" data-aos-offset="100" data-aos-duration="1000">
                   <h3 class="sub-head"><span class="span-left "></span>महाराजांच्या शिकवणी<span
                       class="span-right "></span></h3>
                   <p>&nbsp; &nbsp;महाराजांनी नेहमीच भक्तांना शुद्ध मन, सदाचार, आणि परोपकार यांचे महत्त्व समजावून
@@ -212,47 +213,44 @@
               </div>
             </div>
 
-
-            <div class="lightbox">
-              <div class="wrapper">
-                <div class="lightbox-header">
-                  <div class="details">
-                    <i class="fa-solid fa-image"></i>
-                    <span></span>
+            <section id="gallary">
+              <div class="lightbox">
+                <div class="wrapper">
+                  <div class="lightbox-header">
+                    <div class="details">
+                      <i class="fa-solid fa-image"></i>
+                      <span></span>
+                    </div>
+                    <div class="buttons"><i class="close-icon fa-solid fa-xmark"></i></div>
                   </div>
-                  <div class="buttons"><i class="close-icon fa-solid fa-xmark"></i></div>
-                </div>
-                <div class="preview-img">
-                  <div class="img"><img src="" alt="preview-img"></div>
+                  <div class="preview-img">
+                    <div class="img"><img src="" alt="preview-img"></div>
+                  </div>
                 </div>
               </div>
-            </div>
-            <div class="pmsimg" data-aos="zoom-out" data-aos-duration="2000">
-              <div class="img" data-aos="zoom-in" data-aos-duration="2000"><img src="./assets/img/Samadhi Image 1.jpg"
-                  alt=" Samadhi Image 1"></div>
-              <div class="img" data-aos="zoom-in" data-aos-duration="2000"><img src="./assets/img/Samadhi Image 2.jpg"
-                  alt=" Samadhi Image 2"></div>
-              <div class="img" data-aos="zoom-in" data-aos-duration="2000"><img src="./assets/img/Samadhi Image 3.jpg"
-                  alt=" Samadhi Image 3"></div>
-              <div class="img" data-aos="zoom-in" data-aos-duration="2000"><img src="./assets/img/Samadhi Image 4.jpg"
-                  alt=" Samadhi Image 4"></div>
-            </div>
+              <div class="pmsimg">
+                <div class="img"><img src="./assets/img/Samadhi Image 1.jpg" alt=" Samadhi Image 1"></div>
+                <div class="img"><img src="./assets/img/Samadhi Image 2.jpg" alt=" Samadhi Image 2"></div>
+                <div class="img"><img src="./assets/img/Samadhi Image 3.jpg" alt=" Samadhi Image 3"></div>
+                <div class="img"><img src="./assets/img/Samadhi Image 4.jpg" alt=" Samadhi Image 4"></div>
+              </div>
 
-            <div class="pmsimg-small" data-aos="zoom-in" data-aos-duration="2000">
-              <div class="image-container">
-                <div class="img"><img src="./assets/img/Samadhi Image 1.jpg" alt=" Samadhi Image 1" id="content1"
-                    class="active mbimg"></div>
-                <div class="img"><img src="./assets/img/Samadhi Image 2.jpg" alt=" Samadhi Image 2" id="content2"
-                    class="mbimg"></div>
-                <div class="img"><img src="./assets/img/Samadhi Image 3.jpg" alt=" Samadhi Image 3" id="content3"
-                    class="mbimg"></div>
-                <div class="img"><img src="./assets/img/Samadhi Image 4.jpg" alt=" Samadhi Image 4" id="content4"
-                    class="mbimg"></div>
-                <p class="slide-number"></p>
+              <div class="pmsimg-small">
+                <div class="image-container">
+                  <div class="img"><img src="./assets/img/Samadhi Image 1.jpg" alt=" Samadhi Image 1" id="content1"
+                      class="active mbimg"></div>
+                  <div class="img"><img src="./assets/img/Samadhi Image 2.jpg" alt=" Samadhi Image 2" id="content2"
+                      class="mbimg"></div>
+                  <div class="img"><img src="./assets/img/Samadhi Image 3.jpg" alt=" Samadhi Image 3" id="content3"
+                      class="mbimg"></div>
+                  <div class="img"><img src="./assets/img/Samadhi Image 4.jpg" alt=" Samadhi Image 4" id="content4"
+                      class="mbimg"></div>
+                  <p class="slide-number"></p>
+                </div>
+                <i id="prev" onclick="prev()" class="fa-solid fa-circle-chevron-left"></i>
+                <i id="next" onclick="next()" class="fa-solid fa-circle-chevron-right"></i>
               </div>
-              <i id="prev" onclick="prev()" class="fa-solid fa-circle-chevron-left"></i>
-              <i id="next" onclick="next()" class="fa-solid fa-circle-chevron-right"></i>
-            </div>
+            </section>
           </div>
         </div>
       </div>
@@ -260,13 +258,13 @@
       <div class="footer">
         <div class="footer-content">
           <div class="footer-section">
-            <div class="footer-address" data-aos="zoom-in" data-aos-duration="2000">
+            <div class="footer-address">
               <div class="title3">
                 <h3>संपर्क</h3>
               </div>
               <p><b>पांडु महाराज समाधी, श्री गुरुदत्त मंदिर नगांव,<br> धुळे महाराष्ट्र 424005</b> </p>
             </div>
-            <div class="social-links" data-aos="zoom-out-up" data-aos-duration="2000">
+            <div class="social-links">
               <a href="https://www.instagram.com/pandu_maharaj_samadhi" name="Instagram" target="_blank">
                 <i class="fa-brands fa-instagram"></i></a>
               <a href="https://goo.gl/maps/svSy8oSKG4oGddDn7" name="Google Map" target="_blank">
@@ -290,7 +288,8 @@
 <!-- JavaScript Files -->
 <script src="./assets/index.js"></script>
 <script src="./assets/gallary.js"></script>
-<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<!-- <script src="https://unpkg.com/aos@next/dist/aos.js"></script> -->
+ <script src="./assets/AOS.js"></script>
 <script>
   AOS.init();
 </script>
