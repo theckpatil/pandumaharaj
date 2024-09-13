@@ -270,7 +270,9 @@ header .container {
   align-items: center;
   justify-content: center;
 }
-
+.left{
+  margin-left: 20%;
+}
 .big-title {
   font-size: 1.8rem;
   color: var(--lightOne);
@@ -418,7 +420,7 @@ figcaption {
   }
 
   .showcase-area {
-    padding: 2.5rem 0;
+    padding: 0.5rem 0;
     max-width: 700px;
     margin: 0 auto;
   }
@@ -428,7 +430,9 @@ figcaption {
     justify-content: center;
     grid-gap: 2rem;
   }
-
+.left{
+  margin-left: 0;
+}
   table {
     width: 105%;
   }
