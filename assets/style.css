@@ -101,7 +101,7 @@ header .container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 50px;
+  height: 65px;
 }
 
 .logo {
@@ -130,7 +130,9 @@ header .container {
 .links ul {
   display: flex;
   list-style: none;
-  font-weight: 500;
+  font-weight: bold;
+  font-size: 1.2rem;
+  word-spacing: 1.5;
 }
 
 .links a {
@@ -344,83 +346,6 @@ figcaption {
   color: var(--lightOne);
 }
 
-
-.footer {
-  text-align: center;
-  font-size: 15px;
-  max-height: 220px;
-  margin-top: 6px;
-}
-
-.footer-content {
-  position: relative;
-  height: 150px;
-}
-
-.footer-section {
-  height: 105px;
-  color: #000;
-}
-
-.footer-address p {
-  font-size: 1.1rem;
-  font-weight: 500;
-  color: var(--lightOne);
-
-}
-
-.footer-address .title3 {
-  color: var(--lightOne);
-  text-align: center;
-  margin: 8px 0 5px;
-  font-size: 20px;
-}
-
-.footer-section .social-links {
-  margin-bottom: 10px;
-  padding: 10px;
-  height: 80px;
-  position: relative;
-  bottom: 5px;
-}
-
-.footer-section .social-links a {
-  display: inline-block;
-  height: 40px;
-  width: 40px;
-  background-color: var(--mainColor);
-  margin: 0 10px 10px 0;
-  text-align: center;
-  line-height: 40px;
-  border-radius: 50%;
-  color: #fafbfe;
-  transition: all 0.5s ease;
-  font-size: 18px;
-}
-
-.footer .copyright {
-  position: relative;
-  color: var(--lightFour);
-  bottom: 10px;
-  top: 10px;
-  font-size: 1rem;
-  font-weight: 500;
-  height: 60px;
-  padding: 10px;
-  box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.10);
-  background-color: var(--backgroundColor);
-  margin-top: 5px;
-}
-
-.copyright a {
-  color: var(--mainColor);
-  display: inline-block;
-  transition: 0.3s;
-  font-weight: 500;
-}
-.cpy{
-  color: var(--mainColor);
-}
 .sub-head{
   text-align: center;
   margin-bottom: 5px;
@@ -451,10 +376,10 @@ figcaption {
   }
   .links {
     position: fixed;
-    top: 50px;
+    top: 65px;
     right: 0;
     width: 150px;
-    height: 200px;
+    height: auto;
     background-color: var(--mainColor);
     z-index: 95;
     display: flex;
@@ -464,6 +389,7 @@ figcaption {
     transition: 0.5s;
     /* border-radius: 6px; */
     border-bottom-left-radius: 15px;
+    font-size: 3rem;
   }
 
   .links a:hover {
@@ -615,93 +541,4 @@ figcaption {
     font-size: 1.1rem;
   }
 
-}
-
-/* =============== Gallery ====================== */
-
-/* Image lightbox styling */
-.lightbox {
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 10;
-  position: fixed;
-  visibility: hidden;
-  background: rgba(0, 0, 0, 0.65);
-}
-
-.lightbox.show {
-  visibility: visible;
-}
-
-.lightbox .wrapper {
-  position: fixed;
-  left: 50%;
-  top: 50%;
-  padding: 10px;
-  max-width: 850px;
-  background: #fff;
-  border-radius: 6px;
-  opacity: 0;
-  pointer-events: none;
-  transform: translate(-50%, -50%) scale(0.9);
-  transition: transform 0.1s ease;
-}
-
-.lightbox.show .wrapper {
-  opacity: 1;
-  pointer-events: auto;
-  transform: translate(-50%, -50%) scale(1);
-}
-
-.wrapper :where(.lightbox-header, .details) {
-  display: flex;
-  align-items: center;
-}
-
-.wrapper .lightbox-header {
-  justify-content: space-between;
-  border-bottom: black solid 2px;
-  padding-bottom: 10px;
-}
-
-.lightbox-header .details i {
-  font-size: 1.7rem;
-}
-
-.lightbox-header .details span {
-  font-size: 1.2rem;
-  margin-left: 10px;
-}
-
-.lightbox-header .buttons i {
-  height: 40px;
-  width: 40px;
-  cursor: pointer;
-  display: inline-block;
-  color: #fff;
-  margin-left: 10px;
-  background: red;
-  font-size: 1.25rem;
-  line-height: 40px;
-  text-align: center;
-  border-radius: 4px;
-  transition: 0.2s ease;
-}
-
-.wrapper .preview-img {
-  display: flex;
-  justify-content: center;
-  margin-top: 15px;
-}
-
-.preview-img .img {
-  max-height: 65vh;
-}
-
-.preview-img img {
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
 }
