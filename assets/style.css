@@ -352,7 +352,7 @@ figcaption {
   display: inline-block;
   width: 100px;
   height: 1.5px; /* Adjust height as needed */
-  background-color: black; /* Adjust color as needed */
+  background-color: orangered; /* Adjust color as needed */
   margin-bottom: 7px;
   margin-right: 40px;
 }
@@ -360,7 +360,7 @@ figcaption {
   display: inline-block;
   width: 100px;
   height: 1.5px; /* Adjust height as needed */
-  background-color: black; /* Adjust color as needed */
+  background-color: orangered; /* Adjust color as needed */
   margin-bottom: 7px;
   margin-left: 40px;
 }
