@@ -355,6 +355,7 @@ figcaption {
   background-color: orangered; 
   margin-bottom: 7px;
   margin-right: 40px;
+  border-radius: 50px;
 }
 .span-right {
   display: inline-block;
@@ -363,6 +364,7 @@ figcaption {
   background-color: orangered; 
   margin-bottom: 7px;
   margin-left: 40px;
+  border-radius: 50px;
 }
 
 @media screen and (max-width: 870px) {
