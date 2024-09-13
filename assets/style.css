@@ -428,7 +428,7 @@ figcaption {
   .showcase-area .container {
     grid-template-columns: 1fr;
     justify-content: center;
-    grid-gap: 2rem;
+    grid-gap: 1rem;
   }
 .left{
   margin-left: 0;
