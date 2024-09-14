@@ -66,3 +66,12 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     }
   });
 });
+
+// ====================contact form email validation ===========================
+
+const emailOrPhone = document.getElementById('email').value;
+if (!emailOrPhone.match(/^[a-zA-Z0-9+_.-]+@[a-zA-Z0-9.-]+$|^\d{10}$/)) {
+  document.getElementById('feedbackMessage').innerHTML = 'कृपया वैध ई-मेल किंवा १० अंकी मोबाइल नंबर प्रविष्ट करा.';
+  document.getElementById('feedbackMessage').style.display = 'block';
+  return;
+}
