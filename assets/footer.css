@@ -1,7 +1,7 @@
 .footer {
     text-align: center;
     font-size: 15px;
-    max-height: 220px;
+    max-height: auto;
     margin-top: 6px;
   }
   
@@ -49,19 +49,21 @@
   }
   
   .footer .copyright {
-    position: relative;
+    /* position: relative; */
     color: var(--lightFour);
     bottom: 10px;
     top: 10px;
-    font-size: 1rem;
+    font-size: 1.1rem;
     font-weight: 500;
-    height: 60px;
-    padding: 10px;
+    height: 70px;
+    padding: 20px;
     box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.10);
     background-color: var(--backgroundColor);
-    margin-top: 5px;
+    /* margin-top: 5px; */
+}
+  .copyright p{
+    
   }
-  
   .copyright a {
     color: var(--mainColor);
     display: inline-block;
