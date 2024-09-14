@@ -8,3 +8,11 @@ from = "/*"
 to ="/404.html"
 >>>>>>> 5413cd03331708aabb8faee6807f9c8ecc97d741
 status = 404
+
+[build]
+  functions = "netlify/functions"
+
+[[redirects]]
+  from = "/api/*"
+  to = "/.netlify/functions/:splat"
+  status = 200
