@@ -18,12 +18,12 @@ document.getElementById('contactForm').addEventListener('submit', function(event
 
         if (data.message === 'Message sent successfully!') {
             // alert('Your message has been sent successfully!');
-            feedbackElement.textContent = 'Your message has been sent successfully!';
+            feedbackElement.textContent = 'तुमचा संदेश यशस्वीपणे पाठवला गेला!';
             feedbackElement.style.color = 'green';
             document.getElementById('contactForm').reset();
         } else {
             // alert('Failed to send your message.');
-            feedbackElement.textContent = 'Failed to send your message.';
+            feedbackElement.textContent = 'तुमचा संदेश पाठवण्यात अयशस्वी!';
             feedbackElement.style.color = 'red';
         }
 
@@ -38,7 +38,7 @@ document.getElementById('contactForm').addEventListener('submit', function(event
         // alert('Error sending your message.');
         console.error('Error sending message:', error);
         const feedbackElement = document.getElementById('feedbackMessage');
-        feedbackElement.textContent = 'Error sending your message.';
+        feedbackElement.textContent = 'तुमचा संदेश पाठवताना त्रुटी.';
         feedbackElement.style.color = 'red';
         feedbackElement.style.display = 'block';
     });
