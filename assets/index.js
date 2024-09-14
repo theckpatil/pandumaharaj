@@ -47,21 +47,7 @@ var year = date.getFullYear();
 
 document.getElementById("year").innerHTML = year;
 
-
-// document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-//   anchor.addEventListener('click', function(e) {
-//     e.preventDefault();
-//     const target = document.querySelector(this.getAttribute('href'));
-//     const headerOffset = 70; // Adjust this value according to your header height
-//     const elementPosition = target.getBoundingClientRect().top;
-//     const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
-
-//     window.scrollTo({
-//       top: offsetPosition,
-//       behavior: 'smooth'
-//     });
-//   });
-// });
+// ===================== Link Smooth Scrolling =================
 
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   anchor.addEventListener('click', function(e) {
