@@ -22,11 +22,8 @@
   
   }
   
-  .footer-address .title3 {
-    color: var(--lightOne);
-    text-align: center;
-    margin: 8px 0 5px;
-    font-size: 20px;
+  .footer-address {
+    margin-bottom: 20px;
   }
   
   .footer-section .social-links {
@@ -45,10 +42,10 @@
     margin: 0 10px 10px 0;
     text-align: center;
     line-height: 40px;
-    border-radius: 50%;
+    border-radius: 8px;
     color: #fafbfe;
     transition: all 0.5s ease;
-    font-size: 18px;
+    font-size: 20px;
   }
   
   .footer .copyright {

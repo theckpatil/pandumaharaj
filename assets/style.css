@@ -328,7 +328,6 @@ header .container {
   width: 55%;
   transform: translate(40%, 25px);
   border-radius: 10%;
-  /* border: var(--lightOne) solid 2px; */
   box-shadow: 0 0 0.25rem rgba(0, 0, 0, 0.5);
   padding: 4px;
   border-bottom: none;
@@ -337,7 +336,6 @@ header .container {
 figcaption {
   padding-top: 20px;
   text-align: center;
-  /* font-size: small; */
   font-size: 15px;
   font-weight: 600;
   color: var(--lightOne);
