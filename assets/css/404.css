@@ -3,10 +3,10 @@
 .error-wrapper {
   background-color: #fff;
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
-  margin: 0 auto;
+  /* margin: 0 auto; */
   color: black;
-  -moz-box-align: center;
-  -moz-box-pack: center;
+  /* -moz-box-align: center;
+  -moz-box-pack: center; */
   align-items: center;
   display: flex;
   justify-content: center;
@@ -15,7 +15,10 @@
   border-radius: 10px;
   font-family: "Rubik";
   /* margin-top: 20px; */
-
+  z-index: 1;
+  position: absolute;
+  top:90px;
+  left: 450px;
 }
 .error-box {
   margin: 0 auto;
@@ -46,6 +49,8 @@
 @media (max-width: 768px) {
   .error-wrapper{
     margin-top: 5px;
+    top:90px;
+  left: 20px;
     
   }
   .error-box h1 {
