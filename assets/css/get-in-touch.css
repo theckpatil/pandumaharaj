@@ -103,8 +103,7 @@
 @media (max-width: 768px) {
     .get-in-touch {
         flex-direction: column; /* Stack items vertically on smaller screens */
-        width: 400px;
-        min-width: auto;
+        width: 95%;
     }
 
     .map-container iframe {
