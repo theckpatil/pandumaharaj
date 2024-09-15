@@ -28,9 +28,7 @@ function events() {
   document.addEventListener("click", (e) => {
     // Check if the big_wrapper is active and the click was outside the links element
     if (
-      big_wrapper.classList.contains("active") &&
-      !links.contains(e.target) &&
-      e.target !== hamburger_menu // Ensure click is not on the hamburger menu itself
+      big_wrapper.classList.contains("active") && e.target !== hamburger_menu // Ensure click is not on the hamburger menu itself
     ) {
       big_wrapper.classList.remove("active");
     }
@@ -49,19 +47,20 @@ document.getElementById("year").innerHTML = year;
 
 // ===================== Link Smooth Scrolling =================
 
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-  anchor.addEventListener('click', function(e) {
+document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+  anchor.addEventListener("click", function (e) {
     e.preventDefault();
-    const target = document.querySelector(this.getAttribute('href'));
+    const target = document.querySelector(this.getAttribute("href"));
 
     if (target) {
-      const headerOffset = document.querySelector('header').offsetHeight; // Get navbar height dynamically
+      const headerOffset = document.querySelector("header").offsetHeight; // Get navbar height dynamically
       const elementPosition = target.getBoundingClientRect().top;
-      const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+      const offsetPosition =
+        elementPosition + window.pageYOffset - headerOffset;
 
       window.scrollTo({
         top: offsetPosition,
-        behavior: 'smooth'
+        behavior: "smooth",
       });
     }
   });
