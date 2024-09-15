@@ -105,9 +105,10 @@
 }
 
 /* Responsive Styles */
-@media (max-width: 768px) {
+@media screen and (max-width: 870px) {
     .get-in-touch {
         flex-direction: column; /* Stack items vertically on smaller screens */
+        margin: 5px;
     }
 
     .contact-container,
