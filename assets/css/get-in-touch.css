@@ -102,7 +102,7 @@
     border-radius: 8px; 
 }
 .map-container iframe:focus {
-    outline: none; /* Removes the focus outline */
+    outline: none !important; /* Removes the focus outline */
 }
 
 /* Responsive Styles */
