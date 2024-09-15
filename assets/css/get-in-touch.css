@@ -94,21 +94,12 @@
 .map-container {
     padding: 30px; 
 }
-iframe:focus {
-    outline: none;
-  }
-  
-  iframe[seamless] {
-    display: block;
-  }
+
 .map-container iframe {
     width: 100%;
     height: 400px; /* Set a fixed height for iframe */
     border: 0;
     border-radius: 8px; 
-}
-.map-container iframe:focus {
-    outline: none !important; /* Removes the focus outline */
 }
 
 /* Responsive Styles */
