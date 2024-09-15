@@ -108,8 +108,8 @@
 @media screen and (max-width: 870px) {
     .get-in-touch {
         flex-direction: column; /* Stack items vertically on smaller screens */
-        margin-left: 5px;
-        margin-right: 5px;
+        align-items: center;
+        justify-content: center;
     }
 
     .contact-container,
