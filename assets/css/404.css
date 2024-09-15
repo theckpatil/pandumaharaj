@@ -15,9 +15,7 @@
   border-radius: 10px;
   font-family: "Rubik";
   /* margin-top: 20px; */
-  position: fixed;
-  top:100px;
-  left: 29vw;
+
 }
 .error-box {
   margin: 0 auto;
@@ -48,8 +46,7 @@
 @media (max-width: 768px) {
   .error-wrapper{
     margin-top: 5px;
-    top:100px;
-  left: 22px;
+    
   }
   .error-box h1 {
     font-size: 100px; /* Responsive font size */
