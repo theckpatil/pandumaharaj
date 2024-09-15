@@ -94,7 +94,13 @@
 .map-container {
     padding: 30px; 
 }
-
+iframe:focus {
+    outline: none;
+  }
+  
+  iframe[seamless] {
+    display: block;
+  }
 .map-container iframe {
     width: 100%;
     height: 400px; /* Set a fixed height for iframe */
