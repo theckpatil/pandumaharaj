@@ -1,35 +1,88 @@
-﻿<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html>
+<!-- Website Version = 3.0.0 -->
+<html lang="mr">
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Error - 404 | Page Not Found </title>
 
-    <title>Error - 404 | Page Not Found </title>
-    <!-- // Font Awesome Cdn Link For Icons  -->
-    <link rel="stylesheet" href="./assets/fontawesome-free-6.5.2-web/css/all.min.css" />
-    <!-- // External Css stylesheet Link  -->
-    <link rel="stylesheet" href="./assets/style.css" />
-    <!-- // Favicon Icon Link  -->
-    <link rel="shortcut icon" href="/assets/img/Pandu Maharaj.jpg" type="image/x-icon">
-    <link rel="stylesheet" type="text/css" href="assets/bootstrap/bootstrap.min.css">
-    <link rel="stylesheet" href="./assets/404.css" />
-
+  <!-- // Font Awesome Cdn Link For Icons  -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- // External Css stylesheet Link  -->
+  <link rel="stylesheet" href="./assets/css/style.css" />
+  <link rel="stylesheet" href="./assets/css/404.css">
+  <link rel="stylesheet" href="./assets/css/footer.css" />
+  <!-- // Favicon Icon Link  -->
+  <link rel="shortcut icon" href="/assets/img/Pandu Maharaj.jpg" type="image/x-icon">
 </head>
 
 <body>
-    <div class="error-title">
-        <h1><span style="color: orangered;">Pandurang</span> &nbsp;Maharaj</h1>
-    </div>
-
-    <div class=" error-wrapper">
-        <div class="error-box">
-            <h1>404</h1>
-            <h3><i class="fa fa-warning"></i> Oops! Page not found!</h3>
-            <p>The page you requested was not found.</p>
-            <a href="index.html" class="btn ">Go to Home</a>
+  <main>
+    <div class="big-wrapper light">
+      <header id="header">
+        <div class="container">
+          <div class="logo">
+            <h1><span>पांडुरंग</span> &nbsp;महाराज</h1>
+          </div>
+          <nav class="links" aria-label="Main Navigation">
+            <ul>
+              <li><a href="/index.html" aria-label="मुख्यपृष्ठ - Home">मुख्यपृष्ठ</a></li>
+              <li><a href="#about" aria-label="आध्यात्मिक प्रवास - Spiritual Journey">आध्यात्मिक प्रवास</a></li>
+              <li><a href="#samadhi_info" aria-label="समाधी - Samadhi Information">समाधी</a></li>
+              <li><a href="#gallary" aria-label="गॅलरी - Gallery">गॅलरी</a></li>
+              <li><a href="#contact" aria-label="संपर्क - Contact Us">संपर्क</a></li>
+            </ul>
+          </nav>
+          <div class="hamburger-menu">
+            <div class="bar"></div>
+          </div>
         </div>
+      </header>
+
+      <div class=" error-wrapper">
+        <div class="error-box">
+          <h1>404</h1>
+          <h3><i class="fa fa-warning"></i> Oops! Page not found!</h3>
+          <p>The page you requested was not found.</p>
+          <a href="index.html" class="btn ">Go to Home</a>
+        </div>
+      </div>
+
+      <!-- footer Section -->
+      <div class="footer">
+        <div class="footer-content">
+          <div class="footer-section">
+            <div class="footer-address">
+              <p><b> श्री पांडु महाराज समाधी स्थळ, श्री गुरुदत्त मंदिर नगांव,<br> धुळे महाराष्ट्र 424005</b> </p>
+            </div>
+            <div class="social-links">
+              <a href="https://www.instagram.com/pandu_maharaj_samadhi" name="Instagram" target="_blank">
+                <i class="fa-brands fa-instagram"></i></a>
+              <a href="https://goo.gl/maps/svSy8oSKG4oGddDn7" name="Google Map" target="_blank">
+                <i class="fa-solid fa-location-dot"></i></a>
+              <a href="mailto:pandumaharajsamadhi@gmail.com" name="Mail"><i class="fa-regular fa-envelope"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="copyright">
+          <p>© <span id="year"></span> <span class="cpy">| </span> Developed by <a href="https://ckpatil.vercel.app/">
+              Chandrakant Patil</a>
+          </p>
+        </div>
+      </div>
     </div>
+  </main>
+
 </body>
+
+<!-- JavaScript Files -->
+<script src="./assets/js/index.js"></script>
+<script src="./assets/js/gallary.js"></script>
+<script src="./assets/js/AOS.js"></script>
+<script src="./assets/js/contact.js"></script>
 
 </html>
