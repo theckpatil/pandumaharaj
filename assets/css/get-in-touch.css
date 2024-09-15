@@ -108,14 +108,12 @@
 @media screen and (max-width: 870px) {
     .get-in-touch {
         flex-direction: column; /* Stack items vertically on smaller screens */
-        align-items: center;
-        justify-content: center;
     }
 
-    .contact-container,
+    /* .contact-container,
     .map-container {
         width: 100%; /* Ensure both elements take full width */
-    }
+    /* } */ 
 
     .map-container iframe {
         height: 250px; /* Adjust height for smaller screens */
