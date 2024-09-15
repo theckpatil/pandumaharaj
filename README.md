@@ -2,34 +2,39 @@
 
 ## 📝 Project Overview
 
-The Pandurang Maharaj Legacy and Biography website aims to honor and provide in-depth information about Pandurang Maharaj. The website features detailed biographies, teachings, and a legacy section to educate and engage visitors. With content available in both English and Marathi, it serves as a valuable resource for those interested in his life and contributions.
+The Pandurang Maharaj Legacy and Biography website is dedicated to celebrating and preserving the legacy of Pandurang Maharaj. It provides an in-depth look at his life, teachings, and significant milestones, exclusively in **Marathi**. The site is designed to be a comprehensive resource for devotees and scholars alike.
 
-## 📦 Version v2.5.0 (14-07-2024)
+## 📦 Version v3.0.0 (Updated on: 15-09-2024)
 
 ### ✨ New Features
 
-- Added new information to the website, enhancing the overall content offering in both English and Marathi, with Marathi being the primary language.
-
-### 🐛 Bug Fixes
-
-- Solved margin and content spacing issues for a cleaner and more organized layout.
-- Added a 404 redirect page to guide users when they land on a non-existent page.
+- **Exclusive Marathi Content**: Content is now exclusively available in Marathi, offering a more focused experience for Marathi-speaking visitors.
+- **Interactive Timeline**: A dynamic timeline has been introduced, allowing users to explore major events and milestones from Pandurang Maharaj's life interactively.
+- **Content Categorization**: Improved site navigation with categorized sections such as Teachings, Legacy, Milestones, and more for easier access to specific content.
+- **Modern Contact Form**: Implemented a new, modern contact form featuring map integration for easy location identification and interaction.
 
 ### 🚀 Enhancements
 
-- Made image designs more attractive, improving the visual appeal of the site.
-- Introduced new content animations for a more dynamic user experience.
-- Added extensive new information to various sections of the website in both English and Marathi.
+- **SEO Optimization**: Fully optimized the site for search engines with updated metadata, keywords, and improved content structure to increase visibility and outreach.
+- **Modern UI Design**: Revamped the user interface with contemporary design elements, including enhanced layouts, typography, and color schemes for a more engaging user experience.
+- **Performance Optimization**: Enhanced site performance with faster loading times and optimized images for a smoother experience across various devices.
+- **Enhanced Accessibility**: Improved accessibility features, including better screen reader support and descriptive text for images and interactive elements.
+- **Refreshed Content Animations**: Upgraded animations for more fluid transitions and a dynamic interaction with the site’s content.
+
+### 🐛 Bug Fixes
+
+- Fixed alignment and layout issues on mobile devices to ensure a consistent experience across all screen sizes.
+- Resolved broken links and corrected internal navigation issues for improved functionality.
 
 ### 📌 Notes
 
-- This release focuses on improving user experience through better content presentation and fixing layout issues.
-- The new 404 redirect page ensures a smoother navigation experience even when users encounter broken links.
-- The website content is available in both English and Marathi, with Marathi as the primary language.
+- The site now features an **exclusive Marathi** content experience, reflecting a commitment to providing a comprehensive and immersive platform.
+- The newly added **modern contact form** includes map integration, allowing users to easily find and interact with relevant locations.
+- **SEO and UI** improvements are aimed at enhancing visibility and providing a more visually appealing and accessible site.
 
 ## 🌐 Live Site
 
-You can view the live demo of the website here: [Live Demo](https://pandumaharaj.netlify.app/)
+You can view the updated version of the website here: [Live Demo](https://pandumaharaj.vercel.app/)
 
 ## 📝 License
 
