@@ -8,7 +8,7 @@
     margin-top: 50px;
     margin-bottom: 50px;
     padding: 5px;
-    width: fit-content;
+    /* width: fit-content; */
     border-radius: 15px;
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
 }
@@ -36,12 +36,6 @@
     border-top: 1px solid #121845;
     text-align: center;
 }
-
-/* .contact-container,
-.map-container {
-    flex: 1; /* Grow to fill available space */
-    /* min-width: 400px; Minimum width for smaller screens */
-/* } */
 
 .contact-form {
     display: flex;
@@ -102,18 +96,16 @@
     height: 400px; /* Set a fixed height for iframe */
     border: 0;
     border-radius: 8px; 
+    outline: none;
 }
 
 /* Responsive Styles */
 @media (max-width: 768px) {
     .get-in-touch {
         flex-direction: column; /* Stack items vertically on smaller screens */
+        width: 400px;
+        min-width: auto;
     }
-
-    /* .contact-container,
-    .map-container {
-        width: 100%; /* Ensure both elements take full width */
-    /* } */ 
 
     .map-container iframe {
         height: 250px; /* Adjust height for smaller screens */
