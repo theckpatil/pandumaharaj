@@ -37,11 +37,11 @@
     text-align: center;
 }
 
-.contact-container,
+/* .contact-container,
 .map-container {
     flex: 1; /* Grow to fill available space */
-    min-width: 400px; /* Minimum width for smaller screens */
-}
+    /* min-width: 400px; Minimum width for smaller screens */
+/* } */
 
 .contact-form {
     display: flex;
@@ -105,7 +105,7 @@
 }
 
 /* Responsive Styles */
-@media screen and (max-width: 870px) {
+@media (max-width: 768px) {
     .get-in-touch {
         flex-direction: column; /* Stack items vertically on smaller screens */
     }
