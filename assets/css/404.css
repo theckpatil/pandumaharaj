@@ -5,12 +5,11 @@
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
   margin: 0 auto;
   color: black;
-  -moz-box-align: center;
+  /* -moz-box-align: center;
   -moz-box-pack: center;
-  align-items: center;
+  align-items: center; */
   display: flex;
   justify-content: center;
-  /* width: 650px; */
   width: 90%; /* Changed from fixed 650px */
   max-width: 650px; /* Maintain a maximum width */
   border-radius: 10px;
@@ -44,8 +43,11 @@
 }
 
 @media (max-width: 768px) {
+  .error-wrapper{
+    margin-top: 5px;
+  }
   .error-box h1 {
-    font-size: 80px; /* Responsive font size */
+    font-size: 100px; /* Responsive font size */
   }
 
   .error-box h3{
