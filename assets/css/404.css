@@ -66,6 +66,11 @@
 }
 
 @media (max-width: 480px) {
+  .error-wrapper{
+    top:90px;
+  left: 20px;
+    
+  }
   .error-box h1 {
     font-size: 80px; /* Responsive font size */
   }
