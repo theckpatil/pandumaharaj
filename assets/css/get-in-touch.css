@@ -13,7 +13,7 @@
 .separator {
     height: 2px; /* Adjust height as needed */
     background-color: orangered; /* Adjust color as needed */
-    margin: 20px 0;  
+    margin-bottom: 20px;  
 }
 
 .contact-container {
@@ -100,8 +100,9 @@
     height: 400px; /* Set a fixed height for iframe */
     border: none;
     border-radius: 8px; 
-    outline: none;
-    
+}
+.map-container iframe:focus {
+    outline: none; /* Removes the focus outline */
 }
 
 /* Responsive Styles */
