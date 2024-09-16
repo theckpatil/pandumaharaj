@@ -1,5 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Mirza:wght@400;500;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=ABeeZee:ital@0;1&display=swap');
 
 
@@ -59,6 +58,8 @@ table {
 td {
   padding: 5px;
   vertical-align: baseline;
+  letter-spacing: 1px;
+
 }
 
 .big-wrapper {
@@ -115,7 +116,9 @@ header .container {
   color: var(--lightOne);
   font-size: 1.7rem;
   line-height: 1.2;
-  font-weight: 800;
+  font-weight: 600;
+  font-family: "poppins";
+  letter-spacing: 1px;
 }
 
 .logo span {
@@ -125,9 +128,10 @@ header .container {
 .links ul {
   display: flex;
   list-style: none;
-  font-weight: bold;
-  font-size: 1.2rem;
+  font-weight:600;
+  font-size: 1rem;
   word-spacing: 1.5;
+  font-family: "poppins";
 }
 ul li .dropdown-lang {
   display: none; 
@@ -307,14 +311,13 @@ ul li.show .dropdown-lang {
   align-items: center;
   justify-content: center;
 }
-.left {
-  margin-left: 20%;
-}
+
 .big-title {
   font-size: 1.8rem;
   color: var(--lightOne);
   text-transform: capitalize;
   line-height: 1.7;
+  letter-spacing: 1px;
 }
 
 .title2 {
@@ -322,6 +325,8 @@ ul li.show .dropdown-lang {
   line-height: 1.7;
   text-align: center;
   margin-top: 30px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
 }
 
 .section2 {
@@ -339,6 +344,7 @@ ul li.show .dropdown-lang {
   margin: 1.9rem 0 2.5rem;
   line-height: 1.8;
   text-align: justify;
+  letter-spacing: 1px;
 }
 
 .pmsimg {
@@ -384,6 +390,8 @@ figcaption {
 .sub-head {
   text-align: center;
   margin-bottom: 5px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
 }
 .span-left {
   display: inline-block;
@@ -441,7 +449,9 @@ figcaption {
 
   .links ul {
     flex-direction: column;
-    font-size: 20px;
+    font-size: 16px;
+    font-family: "poppins";
+    font-weight:500;
   }
 
   .links a {
@@ -461,6 +471,7 @@ figcaption {
     box-shadow: none;
     display: none; 
     border-radius: 0 0 10px 10px;
+    font-weight:bold;
   }
   ul li .dropdown-lang li a {
     padding: 5px;
@@ -520,7 +531,9 @@ figcaption {
   table {
     width: 105%;
   }
-
+td{
+  font-size: 15px;
+}
   figcaption {
     padding-top: 0;
   }
@@ -611,7 +624,7 @@ figcaption {
   }
 
   .logo h3 {
-    font-size: 1.8rem;
+    font-size: 1.4rem;
   }
 
   .footer-section .social-links a {
@@ -626,6 +639,6 @@ figcaption {
   }
 
   .big-title {
-    font-size: 1.1rem;
+    font-size: 1.2rem;
   }
 }
