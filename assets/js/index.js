@@ -85,12 +85,11 @@ document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
   });
 });
 
-// document.addEventListener("DOMContentLoaded", function () {
-//   const languageLi = document.querySelector(".dropdown");
-
-//   // Add click event for Language li (Prevent closing of navbar)
-//   languageLi.addEventListener("click", function (event) {
-//     event.stopPropagation(); // Prevent event from bubbling up
-//     this.classList.toggle("show"); // Toggle the dropdown menu
-//   });
-// });
+document.addEventListener("click", (e) => {
+  // Check if the menu is active and the click is outside the menu and its items
+  if (
+    !language_li.contains(e.target) // Ensure the click is not inside the Language dropdown
+  ) {
+    language_li.classList.remove("show"); // Also close the language dropdown
+  }
+});

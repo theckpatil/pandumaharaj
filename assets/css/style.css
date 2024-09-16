@@ -136,29 +136,44 @@ header .container {
 ul li .dropdown-lang {
   display: none; /* Initially hide the dropdown */
   position: absolute;
-  left: 40px;
-  top: 48px; /* Position the dropdown directly below the Language li */
+  left: 20px;
+  top: 47px; /* Position the dropdown directly below the Language li */
   box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
-  min-width: 120px;
-  /* z-index: 1; */
+  min-width: 150px;
   text-align: center;
+  background-color: var(--backgroundColor);
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+.dpd-arrow{
+  margin-left: 5px;
+  display: inline-block;
+  transition: transform 0.3s ease; 
+}
+
+.dropdown.show .dpd-arrow {
+  transform: rotate(-180deg); 
 }
 ul li {
-  position: relative; /* Ensure li is the reference for positioning the dropdown */
+  position: relative; 
 }
 ul li .dropdown-lang li {
   display: block;
-  border-top: 1px solid black;
+  border-bottom: 1px solid black;
 }
 
+.dropdown-lang li:last-child{
+  border-bottom: 0;
+}
 ul li .dropdown-lang li a {
   padding: 8px;
   display: block;
   white-space: nowrap;
   margin-left: 0;
+
 }
 
-ul li:hover .dropdown-lang {
+ul li.show .dropdown-lang {
   display: block; /* Show dropdown on hover */
 }
 
@@ -420,10 +435,10 @@ figcaption {
     justify-content: center;
     transform: translateX(100%);
     transition: 0.5s;
-    /* border-radius: 6px; */
     border-bottom-left-radius: 15px;
     padding: 10px;
     word-spacing: 4px;
+    padding-bottom: 20px;
   }
 
   .links a:hover {
@@ -447,22 +462,27 @@ figcaption {
   }
 
   ul li .dropdown-lang {
-    position: static; /* Remove absolute positioning for mobile */
+    position: static; 
     left: 0;
     top: 0;
     box-shadow: none;
-    display: none; /* Keep it hidden initially */
+    display: none; 
+    border-radius: 0 0 10px 10px;
   }
   ul li .dropdown-lang li a {
     padding: 5px;
     color: #000;
+    display: block; 
   }
+  
   ul li:hover .dropdown-lang {
-    display: none; /* Show dropdown on hover */
+    display: none; 
   }
   
   ul li .dropdown-lang li {
     text-align: center;
+    border-top: 1px solid black;
+    border-bottom: none;
   }
 
   /* Use a class for click-triggered dropdown in mobile view */
@@ -472,20 +492,24 @@ figcaption {
   ul li.show .lang-title {
     margin: 7px;
     width: 90%;
-  }
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    border-radius: 8px;
+    background-color: var(--mainColor);
+    }
   li.show .lang-box {
     background-color: white;
     width: 150px;
     border-radius: 10px;
+    display: inline-block; /* Keep it inline with the lang-title */ 
   }
-
   li .lang-title {
     transform: scale(1);
-    background-color: green;
+    color: #ffffff;
     width: 100%;
-    border-radius: 8px;
-    padding: 5px;
+    border-radius: 6px;
+    padding: 5px; 
   }
+
   .showcase-area {
     padding: 0.5rem 0;
     max-width: 700px;
