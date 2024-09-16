@@ -164,21 +164,8 @@
               lives of numerous devotees, serving as a guiding light.
             </section>
 
-            <div class="lightbox">
-              <div class="wrapper">
-                <div class="lightbox-header">
-                  <div class="details">
-                    <i class="fa-solid fa-image"></i>
-                    <span></span>
-                  </div>
-                  <div class="buttons"><i class="close-icon fa-solid fa-xmark"></i></div>
-                </div>
-                <div class="preview-img">
-                  <div class="img"><img src="" alt="preview-img"></div>
-                </div>
-              </div>
-            </div>
-            <section id="gallary">
+            <!-- Gallary Section -->
+            <section id="gallary">            
               <div class="pmsimg">
                 <div class="img"><img src="/assets/img/Samadhi Image 1.jpg"
                     alt=" Pandu Maharaj Samadhi with intricate spiritual designs" loading="lazy"></div>
@@ -191,28 +178,30 @@
                 <div class="img"><img src="/assets/img/Samadhi Image 4.jpg"
                     alt=" Samadhi Name Plate at Guru Datt Temple" loading="lazy"></div>
               </div>
-            </section>
-            <div class="pmsimg-small">
-              <div class="image-container">
-                <div class="img"><img src="/assets/img/Samadhi Image 1.jpg"
-                    alt=" Pandu Maharaj Samadhi with intricate spiritual designs" id="content1" class="active mbimg">
+
+              <div class="pmsimg-small">
+                <div class="image-container">
+                  <div class="img"><img src="/assets/img/Samadhi Image 1.jpg"
+                      alt=" Pandu Maharaj Samadhi with intricate spiritual designs" id="content1" class="active mbimg">
+                  </div>
+                  <div class="img"><img src="/assets/img/Samadhi Image 2.jpg"
+                      alt=" A wide-angle view of the beautifully designed Pandu Maharaj Samadhi site" id="content2"
+                      class="mbimg"></div>
+                  <div class="img"><img src="/assets/img/Samadhi Image 3.jpg"
+                      alt=" A side-angle view of the beautifully designed Pandu Maharaj Samadhi site" id="content3"
+                      class="mbimg"></div>
+                  <div class="img"><img src="/assets/img/Samadhi Image 4.jpg"
+                      alt=" Samadhi Name Plate at Guru Datt Temple" id="content4" class="mbimg"></div>
+                  <p class="slide-number"></p>
                 </div>
-                <div class="img"><img src="/assets/img/Samadhi Image 2.jpg"
-                    alt=" A wide-angle view of the beautifully designed Pandu Maharaj Samadhi site" id="content2"
-                    class="mbimg"></div>
-                <div class="img"><img src="/assets/img/Samadhi Image 3.jpg"
-                    alt=" A side-angle view of the beautifully designed Pandu Maharaj Samadhi site" id="content3"
-                    class="mbimg"></div>
-                <div class="img"><img src="/assets/img/Samadhi Image 4.jpg"
-                    alt=" Samadhi Name Plate at Guru Datt Temple" id="content4" class="mbimg"></div>
-                <p class="slide-number"></p>
+                <i id="prev" onclick="prev()" class="fa-solid fa-circle-chevron-left"></i>
+                <i id="next" onclick="next()" class="fa-solid fa-circle-chevron-right"></i>
               </div>
-              <i id="prev" onclick="prev()" class="fa-solid fa-circle-chevron-left"></i>
-              <i id="next" onclick="next()" class="fa-solid fa-circle-chevron-right"></i>
-            </div>
+            </section>
           </div>
         </div>
       </div>
+
       <section id="contact" class="get-in-touch">
         <div class="contact-container">
           <h2><span class="span-left " style="width: 25px;"></span>Contact Us<span class="span-right "
@@ -231,7 +220,7 @@
                 required></textarea>
             </div>
             <div class="form-group">
-              <button type="submit" class="btn-submit" >Send Message</button>
+              <button type="submit" class="btn-submit">Send Message</button>
             </div>
           </form>
         </div>
