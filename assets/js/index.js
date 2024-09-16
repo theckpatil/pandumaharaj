@@ -17,23 +17,42 @@ window.addEventListener("scroll", scrollHeader);
 big_wrapper = document.querySelector(".big-wrapper");
 hamburger_menu = document.querySelector(".hamburger-menu");
 links = document.querySelector(".links");
+language_li = document.querySelector(".dropdown"); // Select the Language dropdown li
 
 function events() {
   hamburger_menu.addEventListener("click", (e) => {
     big_wrapper.classList.toggle("active");
+
+     // If the hamburger menu is clicked and the nav is closed, also close the dropdown
+     if (!big_wrapper.classList.contains("active")) {
+      language_li.classList.remove("show"); // Ensure the language dropdown is hidden
+    }
+
     e.stopPropagation(); // Prevents closing the menu immediately
   });
 
-  // Hide the menu when clicking anywhere outside the links element
-  document.addEventListener("click", (e) => {
-    // Check if the big_wrapper is active and the click was outside the links element
-    if (
-      big_wrapper.classList.contains("active") && e.target !== hamburger_menu // Ensure click is not on the hamburger menu itself
-    ) {
-      big_wrapper.classList.remove("active");
-    }
+  // Toggle the language dropdown when clicking the "Language" li
+  language_li.addEventListener("click", function(e) {
+    e.stopPropagation(); // Prevent event bubbling
+    toggleDropdown();
   });
 
+  function toggleDropdown() {
+    language_li.classList.toggle("show"); // Toggle the 'show' class
+    console.log('Dropdown toggled:', language_li.classList.contains('show')); // Debugging: Check if 'show' class is applied
+  }
+  // Hide the menu when clicking anywhere outside the relevant elements
+  document.addEventListener("click", (e) => {
+    // Check if the menu is active and the click is outside the menu and its items
+    if (
+      big_wrapper.classList.contains("active") &&
+      e.target !== hamburger_menu && // Ensure the click is not on the hamburger menu itself
+      !language_li.contains(e.target) // Ensure the click is not inside the Language dropdown
+    ) {
+      big_wrapper.classList.remove("active");
+      language_li.classList.remove("show"); // Also close the language dropdown
+    }
+  });
 }
 
 events();
@@ -65,3 +84,13 @@ document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
     }
   });
 });
+
+// document.addEventListener("DOMContentLoaded", function () {
+//   const languageLi = document.querySelector(".dropdown");
+
+//   // Add click event for Language li (Prevent closing of navbar)
+//   languageLi.addEventListener("click", function (event) {
+//     event.stopPropagation(); // Prevent event from bubbling up
+//     this.classList.toggle("show"); // Toggle the dropdown menu
+//   });
+// });
