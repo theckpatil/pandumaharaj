@@ -34,13 +34,9 @@ function events() {
   // Toggle the language dropdown when clicking the "Language" li
   language_li.addEventListener("click", function(e) {
     e.stopPropagation(); // Prevent event bubbling
-    toggleDropdown();
+    language_li.classList.toggle("show"); // Toggle the 'show' class
   });
 
-  function toggleDropdown() {
-    language_li.classList.toggle("show"); // Toggle the 'show' class
-    console.log('Dropdown toggled:', language_li.classList.contains('show')); // Debugging: Check if 'show' class is applied
-  }
   // Hide the menu when clicking anywhere outside the relevant elements
   document.addEventListener("click", (e) => {
     // Check if the menu is active and the click is outside the menu and its items
